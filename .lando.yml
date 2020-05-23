@@ -1,0 +1,5 @@
+name: np-drupal8
+recipe: drupal8
+config:
+  webroot: .
+  via: "nginx"

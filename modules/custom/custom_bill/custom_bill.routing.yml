@@ -1,0 +1,48 @@
+entity.bill.canonical:
+  path: '/bill/{bill}'
+  defaults:
+    _entity_view: 'bill'
+    _title: 'Contact content'
+  requirements:
+    _entity_access: 'bill.view'
+
+entity.bill.collection:
+  path: '/bill/list'
+  defaults:
+    _entity_list: 'bill'
+    _title: 'Bill list'
+  requirements:
+    _permission: 'view bill entity'
+
+custom_bill.bill_add:
+  path: '/bill/add'
+  defaults:
+    _entity_form: bill.default
+    _title: 'Add Bill'
+  requirements:
+    # checkAccess().
+    _entity_create_access: 'bill'
+
+entity.bill.edit_form:
+  path: '/bill/{bill}/edit'
+  defaults:
+    _entity_form: bill.default
+    _title: 'Edit Bill'
+  requirements:
+    _entity_access: 'bill.update'
+
+entity.bill.delete_form:
+  path: '/contact/{bill}/delete'
+  defaults:
+    _entity_form: bill.delete
+    _title: 'Delete Bill'
+  requirements:
+    _entity_access: 'bill.delete'
+
+custom_bill.bill_settings:
+  path: '/admin/structure/bill_settings'
+  defaults:
+    _form: '\Drupal\custom_bill\Form\BillSettingsForm'
+    _title: 'Contact settings'
+  requirements:
+    _permission: 'administer bill entity'

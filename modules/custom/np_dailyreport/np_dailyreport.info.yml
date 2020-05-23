@@ -1,0 +1,5 @@
+name: Nephroplus DailyReport
+description: DailyReport Custom Entity
+type: module
+package: Nephroplus
+core: 8.x

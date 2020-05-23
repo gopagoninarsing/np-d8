@@ -1,0 +1,11 @@
+# Define the menu links for this module
+
+entity.bill.collection:
+  title: 'Bill Entity'
+  route_name: entity.bill.collection
+  description: 'List contacts'
+bill.admin.structure.settings:
+  title: 'Bill settings'
+  description: 'Configure Bill entity'
+  route_name:  custom_bill.bill_settings
+  parent: system.admin_structure

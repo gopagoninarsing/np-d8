@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+bill.settings_tab:
+  route_name: custom_bill.bill_settings
+  title: Settings
+  base_route: custom_bill.bill_settings
+
+contact.view:
+  route_name: entity.bill.canonical
+  base_route: entity.bill.canonical
+  title: View
+
+contact.page_edit:
+  route_name: entity.bill.edit_form
+  base_route: entity.bill.canonical
+  title: Edit
+
+contact.delete_confirm:
+  route_name:  entity.bill.delete_form
+  base_route:  entity.bill.canonical
+  title: Delete
+  weight: 10

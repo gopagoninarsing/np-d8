@@ -1,0 +1,5 @@
+name: Nephroplus Bills
+type: module
+description: Bill entity.
+package: Nephroplus
+core: 8.x
